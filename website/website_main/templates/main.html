@@ -1,0 +1,78 @@
+<!-- ../website_main/templates/main(first page) -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Thoughts Overload</title>
+    <link rel="icon" type= "image/png" href="{{ url_for ('static',filename ='images/scar.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    .jumbotron{
+      background:none;
+    }
+  </style>
+  <body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <!-- <div class="container" id="hello"> -->
+    <!-- <a class="navbar-brand" href="#">M's Not-So-Secret-Diary</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-fill w-100">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Food</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Books&Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Random Musings</a>
+      </li>
+  </div>
+<!-- </div> -->
+</nav>
+
+<div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 100%)">
+<div class="container">
+<!-- <div class="container"> -->
+<br>
+<h1 class="display-4">M's Not-So-Secret-Diary</h1>
+    <!-- <img src="scar.png" width="30" height="30" class="d-inline-block align-top" alt="">M's Not-So-Secret-Diary -->
+    <!-- <h2 class="display-4">M's Not-So-Secret-Diary</h2> -->
+
+</div>
+</div>
+<!-- </div> -->
+{%block content%}
+
+{%endblock%}
+
+
+<!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+    <!-- <div class="col"><a href="#">About</a></div> -->
+    <!-- <div class="col"><a href="#">Food</a></div> -->
+    <!-- <div class="col"><a href="#">Books</a></div> -->
+    <!-- <div class="col"><a href="#">Random Musings</a></div> -->
+  <!-- </div> -->
+
+
+  </body>
+</html>
