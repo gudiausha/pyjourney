@@ -5,7 +5,7 @@ body, html {
 }
 
 body{
-  background-image: url("{{ url_for ('static',filename ='images/bg-01.jpg') }}");
+  background-image: url("/static/images/about1.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,6 +13,7 @@ body{
   background-color: #cccccc;
 }
 
+/* for setting the style of the heading in jumbotron */
 .display-4
 {
   font-family: 'IM Fell French Canon', serif;
@@ -21,17 +22,7 @@ body{
   font-style: italic;
 }
 
-.container
-{
-  text-align: center;
-  /* text-decoration: underline; */
-  /* width: 100%; */
-  font-size: x-large;
-  /* font-family: cursive; */
-  font-style: italic;
-  /* color: #FFFFFF; */
-}
-
+/* for setting font style for navbar text */
 .navbar-nav a{
   font-family: 'Cinzel', serif;
   font-size: 18px;
