@@ -1,34 +1,40 @@
-{% extends "main.html" %}
+{% extends "base.html" %}
 
+<!-- google fontstyle link for about content  -->
 {%block head%}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 {%endblock%}
 
+<!-- jumbotron in about page for about content -->
 {% block content%}
-<!-- <div class="container">  will put the jumbo in centre-->
-<div class="jumbotron text-center bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 50%,rgba(255,255,255,0.9) 60%)">
-  <!-- <div class="container"> will put the para in centre-->
-<p style="font-family: 'Dancing Script', cursive; font-size: 30px; color: black">Hello!!! Hope each and everyone reading this is hale,healthy and happy. Eversince I started writing I wanted a
-medium where I could share my thoughts and express myself without the fear of feeling judged. And after a lot of pondering and thinking
-I thought why not put my computer skills to some good use &#128540; and so this website <b>M's Not-So-Secret-Diary</b> was designed.
-Hope you enjoy reading the contents as much as I enjoy writing them &#128522; And I just pray I stick to the plan atleast this time and update the website regularly &#128515</p>
-</div>
-
-
-
+<div class="jumbotron jumbotron-billboard">
+  <div class="img"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 style="font-family: 'Dancing Script', cursive; text-align: center;">Memory is the diary that we all carry about with us</h2>
+            </div>
+        </div>
+    </div>
+ </div>
+<br>
+<br>
 <!-- card model for about page -->
-<!-- <div class="container"> -->
-<!-- <div class="card border-dark mb-3" style="max-width: 70rem;"> -->
-  <!-- <div class="card-header bg-transparent ">About</div> -->
-  <!-- <div class="card-body text-dark"> -->
-    <!-- <h5 class="card-title">About</h5> -->
-    <!-- <p class="card-text"> Hello!!! Hope each and everyone reading this is hale,healthy and happy. Eversince I started writing I wanted a -->
-    <!-- medium where I could share my thoughts and express myself without the fear of feeling judged. And after a lot of pondering and thinking -->
-  <!-- I thought why not put my computer skills to some good use &#128540; and thus this website <h4><b><em>M's Not-So-Secret-Diary</em></b></h4>was designed. -->
-<!-- Hope you enjoy reading the contents as much as I enjoyed writing them out &#128522;  </p> -->
-  <!-- </div> -->
-  <!-- <div class="card-footer bg-transparent ">Footer</div> -->
-<!-- </div> -->
-<!-- </div> -->
 
+<div class="container">
+<div class="card border-dark mb-3" style="max-width: 70rem;">
+  <!-- <div class="card-header bg-transparent ">About</div> -->
+  <div class="card-body text-dark">
+    <!-- <h5 class="card-title">About</h5> -->
+    <p class="card-text"> Hello!!! Hope each and everyone reading this is hale,healthy and happy. Eversince I started writing I wanted a
+    medium where I could share my thoughts and express myself without the fear of feeling judged. And after a lot of pondering and thinking
+  I thought why not put my computer skills to some good use &#128540; and thus this website <h4><b><em>M's Not-So-Secret-Diary</em></b></h4>was designed.
+Hope you enjoy reading the contents as much as I enjoyed writing them out &#128522;</p>
+  </div>
+  <!-- <div class="card-footer bg-transparent ">Footer</div> -->
+</div>
+</div>
 {%endblock%}
