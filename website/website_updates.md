@@ -17,4 +17,11 @@
     - must create a user's model for login 
     - blogpost model for CRUD ops 
     - blogpost templates(with and without images, so I can easily upload my posts)
+    
+### Day 3:
+  - created models.py and an admin page for CRUD ops (with /admin, the website will be re-directed to the admin page where I can 
+    add, edit, view and delete blogposts-took about a week)
+  - #### To Do:
+    - decide how to show real-time changes in database in the front-end
+    - go through on how to insert the title of the blogpost in real-time in the card carousel and otherwise as well.
       
