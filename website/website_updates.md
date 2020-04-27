@@ -24,4 +24,9 @@
   - #### To Do:
     - decide how to show real-time changes in database in the front-end
     - go through on how to insert the title of the blogpost in real-time in the card carousel and otherwise as well.
+    
+### Day 4:
+  - Completed the website-took about a week's time.Running perfectly in local system. Just small finishing touches
+  - #### To Do:
+    - host it in cloud. thinking of pythonanywhere.com or heruku.com
       
