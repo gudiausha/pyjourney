@@ -1,0 +1,15 @@
+{% extends "admin.html" %}
+{% block content %}
+	 <br>
+	 <br>
+	 {% for a in blog%}
+	   <h4>{{a.title}}</h4>
+		 <a href="{{url_for('forms_admin.blog_edit',blog_post_id=a.id)}}"><small>Edit</small></a>
+		 <a href="{{url_for('forms_admin.delete_post',blog_post_id=a.id)}}"><small>Delete</small></a><br>
+		 {{a.content|safe|truncate(150)}} 
+		 {{a.date}}   <br>
+		 {{a.category}} <br>
+		 {{a.pics}} <br>
+	 {%endfor%}
+
+{% endblock %}

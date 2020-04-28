@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+
+<!-- linkes to css and and google fonts link for title on the food page -->
+{%block head%}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/food.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/relist.css') }}">
+{%endblock%}
+
+<!-- transparent jumbo with title -->
+{%block content%}
+<div class="jumbotron jumbotron-billboard">
+  <div class="img"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 style="font-family: 'Dancing Script', cursive; text-align: center;">Eat What Makes You Happy</h2>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<h5> My Recipes</h5>
+And if you have any recipes which you think I must try or any suggestions, or
+simply wanna share your recipes with me then <a href="/contact">click here.</a>
+<br> <br>
+<ul>
+{% for article in re %}
+<li><a href="/{{article.id}}">{{article.title}}</a></li>
+{% endfor %}
+  </ul>
+{% endblock %}
