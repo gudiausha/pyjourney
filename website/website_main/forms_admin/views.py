@@ -1,3 +1,5 @@
+# contain views to update,add,delete blog post and to view list of blogposts
+
 from flask import render_template,url_for,flash,request,redirect,Blueprint
 from website_main import db
 from website_main.models import blogposts
@@ -26,10 +28,10 @@ def add():
     return render_template('addform.html',form=form)
 
 # BLOG POST (VIEW) : to  view list of blogpost blog posts
-# blog_post(obj created in above fun, _id:from the models.py)
 @forms_admin.route('/view')
 def blog_view():
-    blog = blogposts.query.paginate(1,5, False).items
+#     yet to update the paginate view in html page
+    blog = blogposts.query.paginate(1,5, False).items 
     return render_template('blog_post.html',blog=blog)
 
 # BLOG POST (VIEW) to get the data for particular blogpost in update func
@@ -42,12 +44,10 @@ def blog_edit(blog_post_id):
         if form.validate_on_submit():
             content = request.form['editordata']
             title = form.title.data
-            # pics = form.pics.data
             category = form.category.data
 
             idno = blogposts.query.get_or_404(blog_post_id)
             idno.title=title
-            # idno.pics=pics
             idno.content=content
             idno.category=category
             db.session.commit()
