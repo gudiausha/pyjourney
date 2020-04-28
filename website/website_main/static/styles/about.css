@@ -1,18 +1,5 @@
-/* jumbo styling */
+/* styling for about page */
 
-/* background image below jumbo */
- /* body, html {
-  height: 100%;
-}
-
- body{
-  background-image: url("/static/images/book1.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #cccccc;
-} */
 .jumbotron-billboard .img {
     margin-bottom: 0px;
     opacity: 0.5;
@@ -51,7 +38,4 @@ text-align: center;}
   }
 }
 
-/* .jumbotron bg-cover
-{
-  min-height: 1000px;
-} */
+
