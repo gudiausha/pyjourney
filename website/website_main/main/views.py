@@ -1,5 +1,10 @@
 # ../website_main/main/views
-from flask import render_template,request,Blueprint
+# basic flask imports
+from flask import render_template,request,Blueprint,redirect, url_for,Flask
+# database import from __init__.py
+from website_main import db
+# table(called blogpost)import from models.py
+from website_main.models import blogposts
 
 cmain=Blueprint('cmain',__name__)
 
@@ -27,3 +32,24 @@ def books():
 @cmain.route('/thoughts')
 def thoughts():
     return(render_template('thoughts.html'))
+
+# routing to admin page which consists of a form through which we can add,delete,update blogposts
+@cmain.route('/admin')
+def admin():
+    return(render_template('admin.html'))
+
+# routing to login page:basic authentication to view the admin page
+@cmain.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != '##########' or request.form['password'] != '########':
+            error = 'Invalid Credentials. Please try again.This is only for admin to login'
+        else:
+            return redirect(url_for('cmain.admin'))
+    return render_template('login.html', error=error)
+
+@cmain.route("/logout")
+def logout():
+    # logout_user()
+    return redirect(url_for("cmain.homepage"))
