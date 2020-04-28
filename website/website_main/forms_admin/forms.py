@@ -1,4 +1,5 @@
-# will contain blog add form
+# contains forms to add and update blog posts by admin.
+# contains the contact form which is called on food,books and thoughts pages.
 
 from flask import Flask, render_template, session, redirect, url_for, session,request
 from flask_wtf import FlaskForm
@@ -10,28 +11,19 @@ from flask_wtf.file import FileField,FileAllowed
 from wtforms.validators import DataRequired
 from wtforms import ValidationError
 
-
-
-
-# Now create a WTForm Class
-# Lots of fields available:
-# http://wtforms.readthedocs.io/en/stable/fields.html
+# form to add a post
 class addform(FlaskForm):
-
     title = StringField('Please enter the title of the blogpost')
-    # pics = RadioField('Any pictures?', choices=[('yes','Yes'),('no','No')])
-    category = RadioField('Select a Category', choices=[('books','books'),('recipes','recipes'),('thoughts','thoughts')])
-    # blog_content = request.form.get('editordata')
+    category = RadioField('Select a Category', choices=[('books','books'),('recipes','recipes'),('thoughts','thoughts')]
     submit = SubmitField('Add')
 
+# displays form to edit post                          
 class blog_edits(FlaskForm):
-
     title = StringField('Please enter the title of the blogpost')
-    # pics = RadioField('Any pictures?', choices=[('yes','Yes'),('no','No')])
     category = RadioField('Select a Category', choices=[('books','books'),('recipes','recipes'),('thoughts','thoughts')])
-    # blog_content = request.form.get('editordata')
     submit = SubmitField('Update')
 
+# displays contact form when the reader clicks on link in respective webpages                       
 class contactform(FlaskForm):
     name = TextField("Your Name",  [validators.Required("Please enter your name")])
     email = TextField("Enter your Email",  [validators.Required("Please enter your email"),validators.Email("Please enter your email")])
