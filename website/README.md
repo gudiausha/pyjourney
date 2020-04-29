@@ -2,7 +2,7 @@
 
 I decided to implement whatever I learnt in the udemy flask course by creating a personal website. This is a single user controlled website. i.e only one person has admin access and only he/she can edit,delete,add and view all the posts. Unlike for a blogging website, here I have decided not to provide the users with a login option. So they have read-only access to the web-pages and the post as well. 
 
-## Getting Started
+### Getting Started
 This repo consists of an overall skeleton of my website.  The installations to be done are:
 
         - Python :- Python 3.8.0
@@ -68,10 +68,18 @@ This repo consists of an overall skeleton of my website.  The installations to b
                  |        ├── thlist.html
                  |        └── thoughts.html
 
-## Deployment 
+### Deployment 
 The application can be run in the local environment by executing the below statement. It is hosted on https://127.0.0.1:5000
 
         python app.py
 
+Here are few snapshots of the website after local hosting:
 
+   ![Website Homepage](https://github.com/gudiausha/pyjourney/blob/master/website/website%201.JPG)
+   
+   ![Website-Books page] (https://github.com/gudiausha/pyjourney/blob/master/website/website%202.JPG)
+   
+   ![Website- Admin login page] (https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
+   
+### Future Enhancements
         
