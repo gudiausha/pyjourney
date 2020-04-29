@@ -76,10 +76,10 @@ The application can be run in the local environment by executing the below state
 Here are few snapshots of the website after local hosting:
 
    ![Website Homepage](https://github.com/gudiausha/pyjourney/blob/master/website/website%201.JPG)
-   
-   ![Website-Books page] (https://github.com/gudiausha/pyjourney/blob/master/website/website%202.JPG)
-   
-   ![Website- Admin login page] (https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
-   
-### Future Enhancements
+
+   ![Wesite-Books page](https://github.com/gudiausha/pyjourney/blob/master/website/website%202.JPG)
+
+   ![Website-Admin login page](https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
+      
+### To-Do
         
