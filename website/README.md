@@ -6,7 +6,7 @@ I decided to implement whatever I learnt in the udemy flask course by creating a
 This repo consists of an overall skeleton of my website.  The installations to be done are:
 
         - Python :- Python 3.8.0
-        - Atom IDE
+        - Atom IDE 
         - Flask framework :-Flask 1.1.2 :- pip install flask 
         - SQL Alchemy for database setup :- Flask-SQLAlchemy 2.4.1 :- pip install Flask-SQLAlchemy
         - For sharing the posts via social media :- Flask-Share 0.1.1 :- pip install Flask-Share
@@ -81,5 +81,33 @@ Here are few snapshots of the website after local hosting:
 
    ![Website-Admin login page](https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
       
-### To-Do
-        
+### Future To-Do's
+* Cloud hosting
+* Implemented multiple routing, but it didn't work out when viewing multiple pages after that. Must look into that. 
+        example: 
+             
+             - tried multiple routing for food.html page:
+             - In main->views.py
+             
+                        @cmain.route('/food')
+                        @cmain.route('/food/<int:id>')
+                        def food(id=None):
+                                if id:
+                                     re = blogposts.query(category='food')
+                                     render_template('food.html',re=re,success=True)
+                                else:
+                                     render_template('food.html')
+                                     
+              - The above changes gave the required result. But the problem occured when clicking other pages after going to /food/1,                   the homepage is displayed. ie.
+                        /food/1 -> /food/about -> actual output:about page, output got: homepage
+              
+                The idea I got to counter this problem is to add various combinations of all posisble routes which i think is not a good                 solution. 
+                
+* Add pagination and little beautification for the admin pages
+* A little more secure approach of admin login maybe using flask security or other options
+
+### Acknowledgements
+
+* Jose Portilla's Udemy course: 'Python and Flask Bootcamp:Create Websites using Flask!'
+* For the wonderful pictures which made my website beautiful: https://unsplash.com/
+
