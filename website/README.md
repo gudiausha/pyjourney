@@ -1,6 +1,6 @@
 ## Personal Website
 
-I decided to implement whatever I learnt in the udemy flask course by creating a personal website. This is a single user controlled website. i.e only one person has admin access and only he/she can edit,delete,add and view all the posts. Unlike for a blogging website, here I have decided not to provide the users with a login option. So they have read-only access to the web-pages and the post as well. 
+I decided to implement whatever I learnt in the udemy flask course by creating a simple personal website. This is a single user controlled website. i.e only one person has admin access and only he/she can edit,delete,add and view all the posts. Unlike for a blogging website, here I have decided not to provide the users with a login option. So they have read-only access to the web-pages and the post as well. 
 
 ### Getting Started
 This repo consists of an overall skeleton of my website.  The installations to be done are:
@@ -80,6 +80,11 @@ Here are few snapshots of the website after local hosting:
    ![Wesite-Books page](https://github.com/gudiausha/pyjourney/blob/master/website/website%202.JPG)
 
    ![Website-Admin login page](https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
+   
+### Lessons Learnt
+* <b> Don't complicate</b> the website designing process. First complete the basic design and then start modifying it.
+* Make notes as and when possible to keep track of the progress(u can check <a href="https://github.com/gudiausha/pyjourney/blob/master/website/website_updates.md">my journal</a> for reference)
+* In terms of coding, i learnt about database setup, various ways of quering database, blueprints, multiple routing, and ofcourse the html,css and bootstrap nuisances. 
       
 ### Future To-Do's
 * Cloud hosting
@@ -106,8 +111,17 @@ Here are few snapshots of the website after local hosting:
 * Add pagination and little beautification for the admin pages
 * A little more secure approach of admin login maybe using flask security or other options
 
-### Acknowledgements
+### References
 
 * Jose Portilla's Udemy course: 'Python and Flask Bootcamp:Create Websites using Flask!'
+* In terms of theory explanation and ideas : https://blog.miguelgrinberg.com/ 
 * For the wonderful pictures which made my website beautiful: https://unsplash.com/
+* While coding I referred to many repos and stackoverflow,but these two repos in particular were in line with my ideas: 
+     * https://github.com/ZainQasmi/PyBlog (to get an idea about cloud hosting and article's page)
+     * https://github.com/kirankoduru/flask-cms-demo (used this to get an idea of the CRUD operations in database)
+     * https://code.tutsplus.com (for the contact form)
+     * https://html-css-js.com (emoticon appearance)
+     * https://w3schools.com (html,css and bootstrap)
+     * https://www.youtube.com/channel/UC-QDfvrRIDB6F0bIO4I4HkQ (for flask related queries....its an <b><i>awesome</b></i> channel)
 
+On a lighter note don't forget to mention me when you fork this repo. Any suggestions for improving this website are welcome.
