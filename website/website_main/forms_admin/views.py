@@ -30,8 +30,8 @@ def add():
 # BLOG POST (VIEW) : to  view list of blogpost blog posts
 @forms_admin.route('/view')
 def blog_view():
-#     yet to update the paginate view in html page
-    blog = blogposts.query.paginate(1,5, False).items 
+
+    blog = blogposts.query.all() 
     return render_template('blog_post.html',blog=blog)
 
 # BLOG POST (VIEW) to get the data for particular blogpost in update func
