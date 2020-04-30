@@ -29,4 +29,7 @@
   - Completed the website-took about a week's time.Running perfectly in local system. Just small finishing touches
   - #### To Do:
     - host it in cloud. thinking of pythonanywhere.com or heruku.com
+    
+### Day 5: 
+  - Completed the app within targeted time -> 2 weeks(+6 days). Hosted on pythonanywhere.com. Overall output is ok. 
       
