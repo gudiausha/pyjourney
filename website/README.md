@@ -84,10 +84,11 @@ Here are few snapshots of the website after local hosting:
 ### Lessons Learnt
 * <b> Don't complicate</b> the website designing process. First complete the basic design and then start modifying it.
 * Make notes as and when possible to keep track of the progress(u can check <a href="https://github.com/gudiausha/pyjourney/blob/master/website/website_updates.md">my journal</a> for reference)
-* In terms of coding, i learnt about database setup, various ways of quering database, blueprints, multiple routing, and ofcourse the html,css and bootstrap nuisances. 
+* In terms of technical knowledge,first I learnt the difference between static website and web applications.
+* Next is that a web application has client side and server side. Second is about cloud services and more importantly implementing them. I read about google, heroku cloud hosting, tried it to but found them a little difficult. Instead I decided to go with python-anywhere.com its good for a beginner to understand. 
+* More importantly I understood how the same code reacts differently in dev as well as prod environment. And how to resolve those issues.Third i learnt the actual meaning of microframework and how python is used for server side logic.
       
-### Future To-Do's
-* Cloud hosting
+### Next Steps
 * Implemented multiple routing, but it didn't work out when viewing multiple pages after that. Must look into that. 
         example: 
              
@@ -108,7 +109,6 @@ Here are few snapshots of the website after local hosting:
               
                 The idea I got to counter this problem is to add various combinations of all posisble routes which i think is not a good                 solution. 
                 
-* Add pagination and little beautification for the admin pages
 * A little more secure approach of admin login maybe using flask security or other options
 
 ### References
