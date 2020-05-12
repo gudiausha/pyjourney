@@ -18,3 +18,7 @@ Sources:
 - https://github.com/talkpython/100daysofcode-with-python-course/tree/master/days/01-03-datetimes
 - https://github.com/Avik-Jain/100-Days-Of-ML-Code
 
+
+##### Day-1:
+- Refreshed basic concepts such as conditions,loops,string,modules and functions.
+- Did a simple tic tac toe game.
