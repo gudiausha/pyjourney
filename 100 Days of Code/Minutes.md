@@ -2,7 +2,10 @@
 - Refreshed basic concepts such as conditions,loops,string,modules and functions.
 - Did a simple tic tac toe game.
 
-Missed many days inbetween...due to ofc tasks.
+##### Day-2: 
+###### (Decided to include the ofc tasks as well, because they aligned with day-1 tasks)
+- CI/CD - Jenkins theory (ofc task)
 
-##### Day-2 & 3:
-- DS : Arrays
+##### Day-3 & 4:
+- Completed the Jenkins automation tasks
+- Created,deleted and built jobs using python script
