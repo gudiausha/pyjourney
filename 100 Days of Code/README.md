@@ -19,4 +19,4 @@ Sources:
 - https://github.com/Avik-Jain/100-Days-Of-ML-Code
 
 
-
+If you wish to check out the minutes: <a href='https://github.com/gudiausha/pyjourney/blob/master/100%20Days%20of%20Code/Minutes.md'> Minutes </a>
