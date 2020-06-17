@@ -22,3 +22,19 @@
 - Completed Git-Hooks task
 - Task-1 : Restricting commit if commit has invalid commit msg
 - Task-2 : Restricting git push if the user pushes to the master
+
+##### Day 20-21: Weekend break
+
+##### Days 22-27:
+###### (Saw a job posting to create microservices using python & flask-decided to give it a try)
+- Microservices with python-theory & searching
+
+##### Days 28-33:
+- Implemented a microservice-1 with few glitches
+- Task not completed, but still open to try (topic is a bit advanced...any help would be appreciated)
+
+##### Days 34-36: Break
+
+##### Days 37-39:
+- DS- Arrays-theory
+- Arrays(python) practice probs
