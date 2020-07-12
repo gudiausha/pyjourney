@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Backend Dev Tasks</title>
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+
+     <center><h1>Upload an image</h1></center>
+     <hr>
+     <form action="/dev/m1/task1" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <center><label>Select first image</label></center><br><br>
+          <center><div class="custom-file">
+            <input type="file" class="custom-file-input" name="file1" id="image">
+            <label class="custom-file-label" for="image"></label> </center>
+          </div><br><br><br>
+
+          <center><label>Select second image</label></center><br><br>
+          <center><div class="custom-file">
+            <input type="file" class="custom-file-input" name="file2" id="image">
+            <label class="custom-file-label" for="image"></label>
+          </div></center>
+
+        </div>
+
+        <br><br><br>
+        <center><button type="submit" class="btn btn-primary">Upload</button></center>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<!-- {% if ret %}
+  <center> <h4><em>The distance between two images is :</em> </h4> <center><br><br>
+  <center> {{ret}} </center>
+{%endif%} -->
+
+
+  </body>
+</html>
