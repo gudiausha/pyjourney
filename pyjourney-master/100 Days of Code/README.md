@@ -15,5 +15,6 @@ Sources:
 
 - https://runestone.academy/runestone/books/published/fopp/index.html
 - https://runestone.academy/runestone/books/published/pythonds/index.html
-- https://github.com/talkpython/100daysofcode-with-python-course/tree/master/days/01-03-datetimes
+- https://github.com/talkpython/100daysofcode-with-python-course/tree/master/days/01-03-datetime
 - https://github.com/Avik-Jain/100-Days-Of-ML-CodeIf you wish to check out the minutes: <a href='https://github.com/gudiausha/pyjourney/blob/master/pyjourney-master/100%20Days%20of%20Code/Minutes.md'> Minutes </a>
+
