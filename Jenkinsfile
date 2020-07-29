@@ -1,46 +1,47 @@
 pipeline {
-         agent any
-         stages {
-                 stage('One') {
-                 steps {
-                     echo 'Hi, this is Pratyusha'
-                 }
-                 }
-                 stage('Two') {
-                 steps {
-                    input('Do you want to proceed?')
-                 }
-                 }
-                 stage('Three') {
-                 when {
-                       not {
-                            branch "feature"
-                       }
-                 }
-                 steps {
-                       echo "When the not condition succeeds this echo gets executed"
-                 }
-                 }
-                 stage('Four') {
-                 parallel { 
-                            stage('Unit Test') {
-                           steps {
-                                echo "Running the unit test..."
-                           }
-                           }
-                           }
-                           }
-               stage('Five'){
-               steps {
-                retry(2) {
-                    echo "Retrying for 2 times"
+    agent any
+    stages {
+        stage('One') {
+            steps {
+                sh 'echo "Hi,this is Pratyusha"'
+            }
+        }
+        stage('Two') {
+            steps {
+                input('Do you want to proceed?')
+            }
+        }
+        stage('Three') {
+            when {
+                not {
+                    branch "feature"
                 }
-
-                timeout(time: 3, unit: 'MINUTES') {
+            }
+            steps {
+                echo "When not condition succeeds this execuets"
+            }
+        }
+        stage ('Four') {
+            parallel {
+                stage ('Four.One') {
+                    steps {
+                        echo "Running...."
+                    }
+                }
+            }
+        }
+        stage ('Five') {
+            steps {
+                retry(2) {
+                    echo "Retrying for 2 times.."
+                }
+                timeout(time:1, unit:'MINUTES') {
                     echo "Timeout"
                 }
-                }
-                           
-              }
-           }
-}
+            }
+        }
+    }
+            
+            
+                    
+        
