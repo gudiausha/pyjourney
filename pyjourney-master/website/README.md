@@ -75,11 +75,14 @@ The application can be run in the local environment by executing the below state
 
 Here are few snapshots of the website after local hosting:
 
-   ![Website Homepage](pyjourney-master/website/website 1.JPG)
+   Website Homepage
+   <img src="pyjourney-master/website/website 1.JPG" />
 
-   ![Wesite-Books page](pyjourney-master/website/website 2.JPG)
+   Wesite-Books page
+   <img src="pyjourney-master/website/website 2.JPG" />
 
-   ![Website-Admin login page](pyjourney-master/website/website 3.JPG)
+   Website-Admin login page
+   <img src="pyjourney-master/website/website 3.JPG" />
    
 ### Lessons Learnt
 * <b> Don't complicate</b> the website designing process. First complete the basic design and then start modifying it.
