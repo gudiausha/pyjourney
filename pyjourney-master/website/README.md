@@ -75,15 +75,15 @@ The application can be run in the local environment by executing the below state
 
 Here are few snapshots of the website after local hosting:
 
-   ![Website Homepage](https://github.com/gudiausha/pyjourney/blob/master/website/website%201.JPG)
+   ![Website Homepage](pyjourney-master/website/website 1.JPG)
 
-   ![Wesite-Books page](https://github.com/gudiausha/pyjourney/blob/master/website/website%202.JPG)
+   ![Wesite-Books page](pyjourney-master/website/website 2.JPG)
 
-   ![Website-Admin login page](https://github.com/gudiausha/pyjourney/blob/master/website/website%203.JPG)
+   ![Website-Admin login page](pyjourney-master/website/website 3.JPG)
    
 ### Lessons Learnt
 * <b> Don't complicate</b> the website designing process. First complete the basic design and then start modifying it.
-* Make notes as and when possible to keep track of the progress(u can check <a href="https://github.com/gudiausha/pyjourney/blob/master/website/website_updates.md">my journal</a> for reference)
+* Make notes as and when possible to keep track of the progress(u can check <a href="pyjourney-master/website/website_updates.md">my journal</a> for reference)
 * In terms of technical knowledge,first I learnt the difference between static website and web applications.
 * Next is that a web application has client side and server side. Second is about cloud services and more importantly implementing them. I read about google, heroku cloud hosting, tried it to but found them a little difficult. Instead I decided to go with python-anywhere.com its good for a beginner to understand. 
 * More importantly I understood how the same code reacts differently in dev as well as prod environment. And how to resolve those issues.Third i learnt the actual meaning of microframework and how python is used for server side logic.
